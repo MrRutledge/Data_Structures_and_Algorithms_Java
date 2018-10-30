@@ -11,20 +11,22 @@ public class SinglyLinkedList {
     	return (first == null);
     	
     }
-    // used to insert at the begging of the class
+    // used to insert at the beginning of the class
     public void insertFirst(int data){
     	Node newNode = new Node();
     	newNode.data = data;
     	newNode.next = first;
     	first = newNode;
     }
+    // to delete the first node in the list 
     public Node deleteFirst(){
     	Node temp = first;
     	first= first.next;
     	return temp;
     }
+    /**
+     To display the data in the linked list**/
     public void displayList(){
-    	
     	System.out.println("List (first--> last) ");
     	Node current = first;
     	while(current != null){
