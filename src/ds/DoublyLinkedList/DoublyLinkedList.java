@@ -1,10 +1,10 @@
 package ds.DoublyLinkedList;
 
 public class DoublyLinkedList {
-	private Node first; //Intance for the first Node 
-	private Node last; //field for the last Node 
+	private Node first; // the first Node field
+	private Node last; // the last Node field
 	
-	// The Class constructor
+	// The Class constructor initiating both fields with null values
 	public DoublyLinkedList() {
 		this.first = null;
 		this.last = null;
