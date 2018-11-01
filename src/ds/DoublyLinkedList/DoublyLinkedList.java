@@ -10,19 +10,17 @@ public class DoublyLinkedList {
 		this.last = null;
 		
 	}
-
-
 	//checking whether the list is empty
 	public boolean isEmpty(){
 		return first == null;
-		
 	}
-	// Method to insert the firts Item in the list and has no return
+
+	/** Method to insert the first Item in the list and has no return */
 	public void insertFirst(int data){  // the method takes one argument of type int 
 		Node newNode = new Node(); //Creating a node first 
 		newNode.data = data; //associating the creatied Node with the data from
 
-		if(isEmpty()) { /**we ccheck whether the List is empty before add the item */ 
+		if(isEmpty()) { //we ccheck whether the List is empty before add the item 
 			last = newNode; // if isEmpty method created above returns True we just turn the new NewNode into the first one
 		}else {
 			first.previous = newNode;//We get the pointer that was referencing from the first one into the newNode
@@ -30,6 +28,7 @@ public class DoublyLinkedList {
 		newNode.next = first; // this node points to the first
 		this.first = newNode;// the first Node is created depending on the logic that played out throughout this method
 	}
+
 	/**This method is used to Insert a node at the end of the list
 	 * it too has no return and takes data as the argument
 	 */
@@ -45,7 +44,8 @@ public class DoublyLinkedList {
 		}
 		last = newNode; // declaring that the New node is the last node if alll the logic passes
 	}
-	//In order to delete anything from the list we have to assume the list is not empty
+
+	/** In order to delete anything from the list we have to assume the list is not empty*/
     public Node deleteFirst() {
     	Node temp = first;
     	if(first.next == null) {//assuming there is only one node on the list
@@ -56,7 +56,7 @@ public class DoublyLinkedList {
     	first = first.next; // were assigning the ref to the first filed in the linkedlist statement
          return temp; 
       }
-    //again I am assuming the linked list has more than zero items in the list
+    /** again I am assuming the linked list has more than zero items in the list */
     public Node deleteLast() {
     	Node temp = last;
     	if(first.next == null) {// if there is only one itme in the list
@@ -68,7 +68,7 @@ public class DoublyLinkedList {
     	return temp;
     }
     
-    //Assuming there in more than one node.
+    /** Assuming there in more than one node. */
     public boolean insertAfter(int key, int data) {
     	Node current = first; // start from the beginnig of the list
     	while(current.data != key) {// as long as we have not found the key were looking for
@@ -108,8 +108,8 @@ public class DoublyLinkedList {
     			return null;
     		}// from here we know the data were looking for is not in the list hence no need to traverse any more
     	}
-//    	Node newNode = new Node();// new instace of the node created
-//    	newNode.data = data; // the instance assigned data
+    	//Node newNode = new Node();// new instace of the node created
+    	//newNode.data = data; // the instance assigned data
     	
     	if(current == first) {
     		first = current.next;
@@ -124,7 +124,7 @@ public class DoublyLinkedList {
     	
     	return current;
     }
-	
+	/** Method for displaying results from first to the last */
    public void displayForward() {
 	   System.out.println("first --> last: ");
 	   Node current = first;// we start from the beginning 
@@ -134,7 +134,7 @@ public class DoublyLinkedList {
 	   }
 	   System.out.println();
    }
-   
+   /**Method to traverse the list and display results from the last one to the first one */
    public void displayBackward() {
 	   System.out.println("last --> first: ");
 	   Node current = last;// we start from the beginning 
