@@ -1,42 +1,49 @@
 package ds.DoublyLinkedList;
 
 public class DoublyLinkedList {
-	private Node first;
-	private Node last;
+	private Node first; //Intance for the first Node 
+	private Node last; //field for the last Node 
 	
+	// The Class constructor
 	public DoublyLinkedList() {
 		this.first = null;
 		this.last = null;
 		
 	}
+
+
 	//checking whether the list is empty
 	public boolean isEmpty(){
 		return first == null;
 		
 	}
-	public void insertFirst(int data){
-		Node newNode = new Node();
-		newNode.data = data;
-		
-		if(isEmpty()) {
-			last = newNode;
+	// Method to insert the firts Item in the list and has no return
+	public void insertFirst(int data){  // the method takes one argument of type int 
+		Node newNode = new Node(); //Creating a node first 
+		newNode.data = data; //associating the creatied Node with the data from
+
+		if(isEmpty()) { /**we ccheck whether the List is empty before add the item */ 
+			last = newNode; // if isEmpty method created above returns True we just turn the new NewNode into the first one
 		}else {
-			first.previous = newNode;
+			first.previous = newNode;//We get the pointer that was referencing from the first one into the newNode
 		}
 		newNode.next = first; // this node points to the first
-		this.first = newNode;
+		this.first = newNode;// the first Node is created depending on the logic that played out throughout this method
 	}
+	/**This method is used to Insert a node at the end of the list
+	 * it too has no return and takes data as the argument
+	 */
 	public  void insertLast(int data) {
-		Node newNode = new Node();
-		newNode.data = data;
+		Node newNode = new Node(); // Creating a new node
+		newNode.data = data; //associating that node to the data
 		
-		if(isEmpty()) {
+		if(isEmpty()) { //here too checking whether the list is empty first
 			last = newNode;
 		}else {
-			last.next = newNode;
-			newNode.previous = last;
+			last.next = newNode;//Here we are saying that whatever was the last node in the list, it's ref for next should point to the Created node
+			newNode.previous = last; // here were saying that the newly created node's previos ref should point to the last field 
 		}
-		last = newNode;
+		last = newNode; // declaring that the New node is the last node if alll the logic passes
 	}
 	//In order to delete anything from the list we have to assume the list is not empty
     public Node deleteFirst() {
@@ -84,7 +91,13 @@ public class DoublyLinkedList {
     	newNode.previous = current;
     	current.next = newNode;// changing what we did earlier after a bit of manupliation 
         return true;
-    }
+	}
+	
+	/** This mothed is used to delete data using a key 
+	 * it takes one argument key which is an int 
+	 * it traverses through the whole list from the begining to end to locate the key
+	 * onence it reaches the end without a key it stops and returns null
+	 */
     
     //Assuming there is more than one node. deleting a node before a certain node 
     public Node deleteKey(int key) {
