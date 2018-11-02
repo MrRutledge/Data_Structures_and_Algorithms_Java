@@ -16,11 +16,11 @@ public class DoublyLinkedList {
 	}
 
 	/** Method to insert the first Item in the list and has no return */
-	public void insertFirst(int data){  // the method takes one argument of type int 
+	public void insertFirst(int data){  // the method takes one argument of type Int
 		Node newNode = new Node(); //Creating a node first 
-		newNode.data = data; //associating the creatied Node with the data from
+		newNode.data = data; //associating the created Node with the data from
 
-		if(isEmpty()) { //we ccheck whether the List is empty before add the item 
+		if(isEmpty()) { //we check whether the List is empty before add the item 
 			last = newNode; // if isEmpty method created above returns True we just turn the new NewNode into the first one
 		}else {
 			first.previous = newNode;//We get the pointer that was referencing from the first one into the newNode
@@ -39,10 +39,10 @@ public class DoublyLinkedList {
 		if(isEmpty()) { //here too checking whether the list is empty first
 			last = newNode;
 		}else {
-			last.next = newNode;//Here we are saying that whatever was the last node in the list, it's ref for next should point to the Created node
-			newNode.previous = last; // here were saying that the newly created node's previos ref should point to the last field 
+			last.next = newNode;//Here we are saying that whatever was the last node in the list, it's reference for next should point to the Created node
+			newNode.previous = last; // here were saying that the newly created node's previous reference should point to the last field 
 		}
-		last = newNode; // declaring that the New node is the last node if alll the logic passes
+		last = newNode; // declaring that the New node is the last node if all the logic passes
 	}
 
 	/** In order to delete anything from the list we have to assume the list is not empty*/
@@ -53,13 +53,13 @@ public class DoublyLinkedList {
         }else { // if we have more than one item in the list 
         	first.next.previous = null;
         	}
-    	first = first.next; // were assigning the ref to the first filed in the linkedlist statement
+    	first = first.next; // were assigning the reference to the first filed in the linked list statement
          return temp; 
       }
     /** again I am assuming the linked list has more than zero items in the list */
     public Node deleteLast() {
     	Node temp = last;
-    	if(first.next == null) {// if there is only one itme in the list
+    	if(first.next == null) {// if there is only one item in the list
     		first = null;
     	}else { 
     		last.previous.next = null; //the last node's previous node is equal to null
@@ -70,7 +70,7 @@ public class DoublyLinkedList {
     
     /** Assuming there in more than one node. */
     public boolean insertAfter(int key, int data) {
-    	Node current = first; // start from the beginnig of the list
+    	Node current = first; // start from the beginning of the list
     	while(current.data != key) {// as long as we have not found the key were looking for
     		current = current.next;
     		if(current == null) {
@@ -89,26 +89,26 @@ public class DoublyLinkedList {
     	}
     	
     	newNode.previous = current;
-    	current.next = newNode;// changing what we did earlier after a bit of manupliation 
+    	current.next = newNode;// changing what we did earlier after a bit of manipulation 
         return true;
 	}
 	
-	/** This mothed is used to delete data using a key 
-	 * it takes one argument key which is an int 
-	 * it traverses through the whole list from the begining to end to locate the key
-	 * onence it reaches the end without a key it stops and returns null
+	/** This method is used to delete data using a key 
+	 * it takes one argument key which is an Integer
+	 * it traverses through the whole list from the beginning to end to locate the key
+	 * once it reaches the end without a key it stops and returns null
 	 */
     
     //Assuming there is more than one node. deleting a node before a certain node 
     public Node deleteKey(int key) {
-    	Node current  = first; // again we start from the begining of the list 
+    	Node current  = first; // again we start from the beginning of the list 
     	while(current.data != key) {
-    		current = current.next; // jsut keep going through the lsit cheking the keys
+    		current = current.next; // just keep going through the list checking the keys
     		if(current == null) {// if you reach the end of the list without find the data 
     			return null;
     		}// from here we know the data were looking for is not in the list hence no need to traverse any more
     	}
-    	//Node newNode = new Node();// new instace of the node created
+    	//Node newNode = new Node();// new instance of the node created
     	//newNode.data = data; // the instance assigned data
     	
     	if(current == first) {
