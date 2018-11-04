@@ -8,7 +8,6 @@ public class DoublyLinkedList {
 	public DoublyLinkedList() {
 		this.first = null;
 		this.last = null;
-		
 	}
 	//checking whether the list is empty
 	public boolean isEmpty(){
