@@ -3,7 +3,7 @@ package ds.DoublyLinkedList;
 public class App {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//Creating a a list with a name of myList 
     DoublyLinkedList myList = new DoublyLinkedList();
      myList.insertFirst(56);
      myList.insertFirst(23);
