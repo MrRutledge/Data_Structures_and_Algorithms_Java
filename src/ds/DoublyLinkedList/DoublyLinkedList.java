@@ -15,14 +15,14 @@ public class DoublyLinkedList {
 	}
 
 	/** Method to insert the first Item in the list and has no return */
-	public void insertFirst(int data){  // the method takes one argument of type Int
-		Node newNode = new Node(); //Creating a node first 
-		newNode.data = data; //associating the created Node with the data from
+	public void insertFirst(int data){  
+		Node newNode = new Node(); 
+		newNode.data = data; 
 
-		if(isEmpty()) { //we check whether the List is empty before add the item 
-			last = newNode; // if isEmpty method created above returns True we just turn the new NewNode into the first one
+		if(isEmpty()) { 
+			last = newNode;
 		}else {
-			first.previous = newNode;//We get the pointer that was referencing from the first one into the newNode
+			first.previous = newNode;
 		}
 		newNode.next = first; // this node points to the first
 		this.first = newNode;// the first Node is created depending on the logic that played out throughout this method
