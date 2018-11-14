@@ -7,9 +7,11 @@ public class App {
         reduceByOne(10);
      
 	}
-public static void reduceByOne(int r) {
-	 if(r >=0) reduceByOne(r-1);
+	public static void reduceByOne(int r) {
+	
+	 if(r >= 0) reduceByOne(r-1);
 	 
+	 System.out.println(r);
 	 System.out.println(r);
 }
 }
