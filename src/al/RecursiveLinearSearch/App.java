@@ -5,12 +5,13 @@ public class App {
 	public static void main(String[] args) {
 		System.out.println(recursiveLinearSearch(new int[] {4,48,4,28,34,76,9},0,34));
 	}
-	
+	/** The method takes three arguments one for the array another one for the searched index and the last one for its position
+	 * */
 	public static int recursiveLinearSearch(int a[], int i, int x) {
 		
-		if(i >a.length-1) {
-			return -1;
-		}else if(a[i]==x)
+		if(i >a.length-1) { // traversing through the array
+			return -1; // if negative one is returned that means we didnt find the x in the given array
+		}else if(a[i]==x)// if we 
 		 {
 			return i;	
 		}else {
