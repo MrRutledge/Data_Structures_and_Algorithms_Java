@@ -35,4 +35,5 @@ public class BinarySearch {
 	    	   return recursiveBinarySearch(a, m+1, r, x);
 	         }
 	    }
-}}
+	}
+}
