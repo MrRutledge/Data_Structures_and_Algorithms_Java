@@ -23,20 +23,16 @@ public class BinarySearch {
 	
 	public static int recursiveBinarySearch(int a[], int p, int r, int x) {
 	     int m;
-	     p = 0;
-	     r = a.length - 1;
+	     //p = 0;
+	     //r = a.length - 1;
 	     if(p > r) { return -1;}
-	       else {
-	    	 m = (p+r)/2;
+	       else { m = (p+r)/2;
 	    	if(a[m] == x) return m;
 	    	 else if(a[m] > x) {
 	    	  System.out.println("index:   "+x);
 	    		return recursiveBinarySearch(a, p, m-1, x);
-	    } else {return recursiveBinarySearch(a, m-1, r, x);
-	    			  
-	    		  }
-	    		
-	    	 }
-
-
+	        }else{
+	    	   return recursiveBinarySearch(a, m+1, r, x);
+	         }
+	    }
 }}
