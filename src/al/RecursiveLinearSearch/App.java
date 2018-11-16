@@ -10,8 +10,8 @@ public class App {
 	public static int recursiveLinearSearch(int a[], int i, int x) {
 		
 		if(i >a.length-1) { // traversing through the array
-			return -1; // if negative one is returned that means we didnt find the x in the given array
-		}else if(a[i]==x)// if we 
+			return -1; // if negative one is returned that means we didn't find the x in the given array
+		}else if(a[i]==x)// if we find the index is equal to the searched index 
 		 {
 			return i;	
 		}else {
