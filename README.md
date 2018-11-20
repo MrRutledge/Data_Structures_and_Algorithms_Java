@@ -8,4 +8,53 @@ a list of the current different implementations I have worked on.
 
 
 ## __ Project Tree__
+
 Data_Structures_Java/src--->
+ 
+```
+Learning-DataStructures/
+├── bin
+├── README.md
+└── src
+    ├── adt
+    │   ├── App.java
+    │   └── Counter.java
+    ├── al
+    │   ├── BinarySearch
+    │   │   └── BinarySearch.java
+    │   ├── LinearSearchAlgorithm
+    │   │   └── App.java
+    │   ├── Recursion
+    │   │   └── App.java
+    │   ├── RecursiveBinarySearch
+    │   │   └── App.java
+    │   ├── RecursiveLinearSearch
+    │   │   └── App.java
+    │   └── SelectionSort
+    │       └── App.java
+    └── ds
+        ├── CircularLinkedList
+        │   ├── App.java
+        │   ├── CircularLinkedList.java
+        │   └── Node.java
+        ├── DoublyLinkedList
+        │   ├── App.class
+        │   ├── App.java
+        │   ├── DoublyLinkedList.class
+        │   ├── DoublyLinkedList.java
+        │   ├── Node.class
+        │   └── Node.java
+        ├── Linkedlist
+        │   ├── App.java
+        │   └── Node.java
+        ├── Queue
+        │   ├── App.java
+        │   └── Queue.java
+        ├── SinglyLinkedList
+        │   ├── App.java
+        │   ├── Node.java
+        │   └── SinglyLinkedList.java
+        └── Stack
+            ├── App.java
+            └── Stack.java
+```
