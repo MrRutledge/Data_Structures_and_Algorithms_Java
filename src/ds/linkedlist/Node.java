@@ -1,4 +1,4 @@
-package ds.linkedlist;
+package ds.Linkedlist;
 
 public class Node {
 	int data;

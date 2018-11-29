@@ -1,4 +1,4 @@
-package ds.queue;
+package ds.Queue;
 
 public class Queue {
   private int maxSize; //

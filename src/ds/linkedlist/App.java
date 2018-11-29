@@ -1,4 +1,4 @@
-package ds.linkedlist;
+package ds.Linkedlist;
 
 //import java.util.ArrayList;
 

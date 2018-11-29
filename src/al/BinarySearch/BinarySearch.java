@@ -14,9 +14,9 @@ public class BinarySearch {
 		
 		while (p <= r) {
 			 int q = (p+r)/2;
-			 if( x < a[q]) r =q-1;
-			 else if(x > a[q]) p = q+1;
-			 else return q;
+			  if( x < a[q]) r =q-1;
+			   else if(x > a[q]) p = q+1;
+			    else return q;
 		}
 		return -1;
 	}

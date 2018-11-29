@@ -1,4 +1,4 @@
-package ds.singlyLinkedList;
+package ds.SinglyLinkedList;
 
 public class SinglyLinkedList {
 	private Node first;
@@ -6,24 +6,25 @@ public class SinglyLinkedList {
 	public SinglyLinkedList(){
 		
 	}
-	// Checks whether the list is empty or not
+	/**Checks whether the list is empty or not**/
     public boolean isEmpty(){
     	return (first == null);
     	
     }
-    // used to insert at the beginning of the class
+    /** used to insert at the beginning of the class*/
     public void insertFirst(int data){
     	Node newNode = new Node();
     	newNode.data = data;
     	newNode.next = first;
     	first = newNode;
     }
-    // to delete the first node in the list 
+    /** To delete the first node in the list */
     public Node deleteFirst(){
     	Node temp = first;
     	first= first.next;
     	return temp;
     }
+    
     /**
      To display the data in the linked list**/
     public void displayList(){
@@ -35,6 +36,8 @@ public class SinglyLinkedList {
     	}
     	System.out.println("");
     }
+    /*
+     * Appending a node at the end of the Lists**/
     public void insertLast(int data){
     	Node current = first;
     	while(current.next != null){
