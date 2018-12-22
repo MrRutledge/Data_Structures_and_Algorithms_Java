@@ -5,7 +5,7 @@ In this project I am reading the Algorithm and Data Structures book as well as w
 
 If you would like to follow along the source code is available in this directory. **Data_Structures_Java/src/ds/**---------->
 a list of the current different implementations I have worked on. 
-
+The.
 
 ## __ Project Tree__
 
