@@ -9,6 +9,7 @@
 # BlueJ files
 *.ctxt
  tree.md
+ .idea/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -28,3 +29,5 @@
 hs_err_pid*
 /.metadata/
 /.recommenders/
+/.idea/workspace.xml
+.idea

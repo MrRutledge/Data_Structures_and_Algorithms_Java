@@ -7,7 +7,7 @@ If you would like to follow along the source code is available in this directory
 a list of the current different implementations I have worked on. 
 The.
 
-## __ Project Tree__
+## __Project Tree__
 
 Data_Structures_Java/src--->
  
@@ -58,3 +58,4 @@ Learning-DataStructures/
             ├── App.java
             └── Stack.java
 ```
+
