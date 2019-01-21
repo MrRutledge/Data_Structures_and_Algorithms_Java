@@ -7,9 +7,12 @@ public class App {
     CircularLinkedList myList = new CircularLinkedList();
      myList.insertFirst(56);
      myList.insertFirst(23);
-     myList.insertFirst(5);
-     myList.insertFirst(6);
+     myList.insertFirst(15);
+     myList.insertFirst(16);
      myList.insertLast(12);
+     myList.insertFirst(53);
+     myList.insertFirst(61);
+     myList.insertLast(13);
      
      myList.displayList();
 	}
