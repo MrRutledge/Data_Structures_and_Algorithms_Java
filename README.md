@@ -51,7 +51,7 @@ Learning-DataStructures/
         │   ├── App.java
         │   └── Queue.java
         ├── SinglyLinkedList
-        │   ├── App.java
+        `_````_`│   ├── App.java
         │   ├── Node.java
         │   └── SinglyLinkedList.java
         └── Stack
